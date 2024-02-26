@@ -1,0 +1,28 @@
+<html>
+<link rel="stylesheet" href="style.css" />
+
+<body>
+    <main id="loading-zone" aria-busy="true">
+        <div class="card">
+            <label>
+                <span class="sr-only">Loading progress</span>
+                <progress aria-describedby="loading-zone" role="progressbar" tabindex="-1" indeterminate></progress>
+                <! Use tabindex="-1" to make the progress element focusable from JavaScript. This is important for
+                    screen reader technology, since giving the progress focus as * changes, will announce to the user
+                    how far the updated progress has reached.->
+
+
+            </label>
+        </div>
+    </main>
+    <div class="button-group">
+        <button id="increase" onclick="increase()">Increase</button>
+        <button id="decrease" onclick="decrease()">Decrease</button>
+        <button id="complete" type="submit" onclick="complete()">Complete</button>
+        <button id="reset" type="reset" onclick="reset()">Reset</button>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+
+</html>

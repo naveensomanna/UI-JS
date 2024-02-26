@@ -1,0 +1,40 @@
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50vw;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+}
+
+.stars {
+    align-self: center;
+
+    .fa {
+        cursor: pointer;
+        color: white;
+        font-size: 2rem;
+
+        &::before {
+            margin-right: 2rem;
+        }
+    }
+
+    .checked {
+        color: yellow;
+    }
+}
